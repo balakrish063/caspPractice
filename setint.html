@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript For Loop</h2>
+<p id="demo"></p>
+<script>
+function myFunction() {
+let s= "hi bala how are u , hope ur doing well";
+let text="";
+const myArray = s.split(" ");
+//document.getElementById("demo").innerHTML = text;
+for(let i=0;i<myArray.length;i++)
+{   setTimeout(function(){
+    text+=myArray[i]+" ";
+    document.getElementById("demo").innerText = text;},1*1000);
+    //text+=" ";
+}}
+</script>
+<button onclick="myFunction()">Try it</button>
+<button onclick="clearTimeout(myVar)">Stop it</button>
+</body>
+</html>
+
+
+
